@@ -9,3 +9,4 @@
 | TC07    | Multiple Negatives in Input           | `"1,-2,-3"`            | Exception: negatives not allowed: -2,-3 | Must report all negatives                |
 | TC08    | Numbers Greater Than 1000 Are Ignored | `"2,1001"`             | `2`                                     | Validates exclusion of large numbers     |
 | TC09    | Only Large Numbers Present            | `"1001,1002"`          | `0`                                     | Validates when all numbers are too large |
+| TC10    | Invalid Input with Trailing Delimiter | `"1,\n"`               | Exception: invalid input format         | Validates rejection of malformed numbers |
